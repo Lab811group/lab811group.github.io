@@ -1,1 +1,1 @@
-Place your headshot here as headshot.jpg, then replace the placeholder block in index.html.
+Optional member images can go here. Current site uses initials so no images are required.

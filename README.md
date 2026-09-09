@@ -1,40 +1,36 @@
-# lab811group.github.io
+# Lab811 website
 
-Website repository for Lab811.
+Official repository for the Lab811 research group website.
 
-## GitHub Pages
+**Website:** https://lab811group.github.io
 
-This repository is intended to publish at:
+Lab811 is a mechanics, materials, and machine-learning research group at
+Southern Illinois University Carbondale.
 
-https://lab811group.github.io
+## Site structure
 
-The site uses plain HTML and CSS; there is no build step.
+- `index.html` — group homepage
+- `research.html` — research themes
+- `members.html` — PI, current members, alumni/past members
+- `publications.html` — selected publications
+- `teaching.html` — teaching and mentoring
+- `news.html` — group news
+- `openings.html` — prospective students and collaboration
+- `resources.html` — curated resources
+- `css/style.css` — site styling
 
-## Files
+## Updating the site
 
-- `index.html`
-- `research.html`
-- `publications.html`
-- `teaching.html`
-- `awards-service.html`
-- `resources.html`
-- `css/style.css`
-- `img/`
-
-## Update workflow
-
-1. Edit files locally.
-2. Commit changes in GitHub Desktop.
+1. Edit locally.
+2. Commit in GitHub Desktop.
 3. Push to `main`.
-4. GitHub Pages will update automatically after deployment is enabled.
+4. GitHub Pages will redeploy automatically.
 
-## Before public launch
+## Before broader public launch
 
-The HTML files in this starter package preserve the content previously supplied.
-Review the existing TODO comments and placeholders before public release,
-especially institutional affiliation, contact information, headshot, CV,
-Google Scholar/LinkedIn links, and group-site navigation.
-
-If the site becomes an official SIU research-group site, update branding,
-footer, accessibility, privacy, and institutional links to comply with
-current SIU web requirements.
+- Replace the generic Google Scholar link with Prof. Zhang's exact profile URL.
+- Add a preferred SIU email address if desired.
+- Add member surnames, photos, personal pages, and detailed research topics as appropriate.
+- Add future alumni and placement information.
+- Add a custom SIU domain if approved.
+- Review SIU branding/accessibility/footer requirements before treating the site as an official university web property.

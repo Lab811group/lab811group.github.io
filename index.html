@@ -1,165 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Yupeng Zhang — Applied Mechanics</title>
-<meta name="description" content="Yupeng Zhang — applied mechanician working on solid mechanics, computational modeling, and machine learning for materials and structures.">
+<meta name="theme-color" content="#720000">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,600;1,400&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,600;1,400&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
+
+<title>Lab811 — Mechanics, Materials &amp; Machine Learning</title>
+<meta name="description" content="Lab811 at Southern Illinois University Carbondale develops predictive mechanics through solid mechanics, computation, machine learning, and experiment.">
 </head>
 <body>
 
 <header class="site-header">
-  <nav class="nav wrap" aria-label="Main">
-    <a class="brand" href="index.html">Yupeng Zhang</a>
+  <nav class="nav wrap" aria-label="Main navigation">
+    <a class="brand" href="index.html"><span class="brand-mark">811</span><span>Lab811</span></a>
+    <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.body.classList.toggle('nav-open')">Menu</button>
     <ul>
       <li><a href="index.html" aria-current="page">Home</a></li>
       <li><a href="research.html">Research</a></li>
+      <li><a href="members.html">Members</a></li>
       <li><a href="publications.html">Publications</a></li>
       <li><a href="teaching.html">Teaching</a></li>
-      <li><a href="awards-service.html">Awards &amp; Service</a></li>
-      <li><a href="resources.html">Resources</a></li>
-      <!-- Group-site pages: uncomment when the group launches in Fall 2026.
-      <li><a href="people.html">People</a></li>
       <li><a href="news.html">News</a></li>
       <li><a href="openings.html">Openings</a></li>
-      -->
-      <li><a href="cv.pdf">CV</a></li>
+      <li><a href="resources.html">Resources</a></li>
     </ul>
   </nav>
 </header>
 
-<section class="masthead">
-  <div class="wrap">
-    <!-- Signature element: von Mises-style stress contours around a crack tip -->
-    <svg class="contours" viewBox="0 0 460 300" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-      <g fill="none" stroke="#C9DCEA" stroke-width="1.5">
-        <path d="M300 150 C300 118 322 96 350 96 C395 96 430 122 430 150 C430 178 395 204 350 204 C322 204 300 182 300 150 Z"/>
-        <path d="M285 150 C285 105 318 74 355 74 C412 74 458 110 458 150 C458 190 412 226 355 226 C318 226 285 195 285 150 Z"/>
-        <path d="M268 150 C268 90 314 50 362 50 C430 50 486 96 486 150 C486 204 430 250 362 250 C314 250 268 210 268 150 Z"/>
-        <path d="M250 150 C250 74 310 24 370 24 C450 24 516 82 516 150 C516 218 450 276 370 276 C310 276 250 226 250 150 Z"/>
-        <path d="M232 150 C232 58 306 0 378 0 C470 0 546 68 546 150 C546 232 470 300 378 300 C306 300 232 242 232 150 Z"/>
-      </g>
-      <line x1="120" y1="150" x2="300" y2="150" stroke="#2774AE" stroke-width="2"/>
-      <circle cx="300" cy="150" r="3.5" fill="#005587"/>
-    </svg>
 
-    <h1>Yupeng Zhang</h1>
-    <p class="role">
-      Applied mechanician — solid mechanics, computational modeling, and machine
-      learning for materials and structures.<br>
-      <strong>Incoming Assistant Professor, [Department], [University], Fall 2026.</strong><br>
-      Currently Postdoctoral Researcher &amp; Instructor, Mechanical and Aerospace
-      Engineering, UCLA.
-    </p>
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow">Southern Illinois University Carbondale</p>
+      <h1>Lab811</h1>
+      <p class="hero-tagline">Mechanics · Materials · Machine Learning</p>
+      <p class="hero-copy">
+        We develop predictive models for materials and structures by combining
+        solid mechanics, computation, data-driven modeling, and experiment.
+        Our work spans constitutive modeling, fracture and creep, inverse problems,
+        architected materials, and machine learning for mechanics.
+      </p>
+      <div class="hero-actions">
+        <a class="button" href="research.html">Explore our research</a>
+        <a class="button secondary" href="members.html">Meet the group</a>
+      </div>
+    </div>
+    <div class="hero-graphic" aria-hidden="true">
+      <svg viewBox="0 0 520 360" xmlns="http://www.w3.org/2000/svg">
+        <g fill="none" stroke="currentColor" stroke-width="1.5" opacity=".34">
+          <path d="M55 178 C135 86 235 80 330 146 C405 198 453 202 505 177"/>
+          <path d="M48 203 C137 110 240 105 329 164 C402 212 455 219 512 198"/>
+          <path d="M62 151 C144 61 242 55 337 126 C414 184 457 184 503 156"/>
+          <path d="M100 260 C171 188 244 184 310 224 C376 264 431 270 482 242"/>
+          <path d="M95 101 C165 43 240 38 314 83 C386 127 436 125 481 99"/>
+        </g>
+        <g fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M90 180 H242"/>
+          <circle cx="247" cy="180" r="5" fill="currentColor"/>
+          <path d="M252 180 C290 148 328 138 371 148"/>
+        </g>
+        <g fill="currentColor" opacity=".16">
+          <circle cx="128" cy="103" r="5"/><circle cx="178" cy="82" r="5"/>
+          <circle cx="225" cy="104" r="5"/><circle cx="307" cy="92" r="5"/>
+          <circle cx="367" cy="122" r="5"/><circle cx="407" cy="160" r="5"/>
+          <circle cx="142" cy="246" r="5"/><circle cx="218" cy="228" r="5"/>
+          <circle cx="311" cy="246" r="5"/><circle cx="396" cy="238" r="5"/>
+        </g>
+      </svg>
+    </div>
   </div>
 </section>
 
-<div class="columns wrap">
-  <main>
-    <h2>About<span class="rule"></span></h2>
-    <p>
-      I am currently a postdoctoral researcher and instructor in the Department
-      of Mechanical and Aerospace Engineering at UCLA, and will join
-      [University] as a tenure-track Assistant Professor in Fall 2026. Before
-      UCLA, I was a postdoctoral scholar with Prof.&nbsp;Kaushik Bhattacharya in
-      the Department of Mechanical and Civil Engineering at Caltech
-      (2023–[year]), and with Prof.&nbsp;Zdeněk&nbsp;P.&nbsp;Bažant in the
-      Department of Civil and Environmental Engineering at Northwestern
-      University (2022).
-    </p>
-    <p>
-      I earned my Ph.D. in Materials Science and Engineering at Texas A&amp;M
-      University (2021, GPA 4.0/4.0) with Prof.&nbsp;Alan Needleman, in
-      collaboration with Prof.&nbsp;George Pharr and Prof.&nbsp;Jeffrey
-      D.&nbsp;Hart (Statistics). My thesis,
-      <a href="https://hdl.handle.net/1969.1/196386"><em>Bayesian inference of
-      plastic properties from indentation</em></a>, developed statistical
-      approaches to material identification. I received my B.Eng. with honors in
-      Engineering Mechanics (Qian Lingxi Program) from Dalian University of
-      Technology in 2015, including a Mitacs Globalink research internship at
-      the University of British Columbia.
-    </p>
-
-    <h2>Research vision<span class="rule"></span></h2>
-    <p>
-      A grand challenge in computational science and engineering is that
-      machine-learned models remain tied to the discretization of their training
-      data. My vision is to develop deep-learned <em>operators</em> — mappings
-      between infinite-dimensional function spaces rather than
-      finite-dimensional vectors — that are invariant to data resolution, and to
-      use them as efficient surrogates to discover constitutive models, build
-      applicable multiscale models, and resolve inverse problems. Because the
-      learned operators tolerate coarser or finer input at a consistent error
-      level, they are directly usable with experimental data, whose resolution
-      cannot be dictated in advance.
-    </p>
-    <div class="thrust">
-      <h3><a href="research.html#ml-mechanics">Machine learning for mechanics</a></h3>
-      <p>Operator learning, recurrent architectures for history-dependent
-      constitutive behavior, and generative design — including neural
-      constitutive models coupled directly into Abaqus via VUMAT.</p>
+<main>
+  <section class="section wrap">
+    <div class="section-heading">
+      <p class="eyebrow">Research</p>
+      <h2>What we work on</h2>
     </div>
-    <div class="thrust">
-      <h3><a href="research.html#fracture-creep">Fracture, damage, and creep</a></h3>
-      <p>Viscoplasticity, quasibrittle failure, smooth crack band modeling, and
-      lifetime prediction for structural materials.</p>
+    <div class="card-grid three">
+      <article class="card">
+        <span class="card-kicker">01</span>
+        <h3>Machine learning for mechanics</h3>
+        <p>Operator learning, recurrent models for history-dependent behavior,
+        generative design, and learned constitutive models deployed in finite-element workflows.</p>
+        <a href="research.html#ml-mechanics">Learn more →</a>
+      </article>
+      <article class="card">
+        <span class="card-kicker">02</span>
+        <h3>Failure &amp; lifetime prediction</h3>
+        <p>Fracture, damage, creep, viscoplasticity, localization, and probabilistic
+        failure of structural and architected materials.</p>
+        <a href="research.html#failure">Learn more →</a>
+      </article>
+      <article class="card">
+        <span class="card-kicker">03</span>
+        <h3>Experiments, inverse problems &amp; design</h3>
+        <p>Indentation, full-field measurements, additive manufacturing, Bayesian
+        inference, uncertainty quantification, and experiment-informed model discovery.</p>
+        <a href="research.html#inverse">Learn more →</a>
+      </article>
     </div>
-    <div class="thrust">
-      <h3><a href="research.html#inverse-uq">Inverse problems and uncertainty
-      quantification</a></h3>
-      <p>Bayesian inference and Gaussian-process surrogates for identifying
-      material properties from indentation and full-field measurements.</p>
+  </section>
+
+  <section class="section section-tint">
+    <div class="wrap">
+      <div class="section-heading split-heading">
+        <div>
+          <p class="eyebrow">People</p>
+          <h2>Current group</h2>
+        </div>
+        <a href="members.html">All members →</a>
+      </div>
+      <div class="member-grid">
+        <article class="member-card compact">
+          <div class="avatar">YZ</div>
+          <div>
+            <h3>Yupeng Zhang</h3>
+            <p class="role-line">Principal Investigator · Assistant Professor</p>
+            <p>Solid mechanics, computational modeling, machine learning for materials and structures.</p>
+          </div>
+        </article>
+        <article class="member-card compact">
+          <div class="avatar">PN</div>
+          <div>
+            <h3>Prateek Neupane</h3>
+            <p class="role-line">Ph.D. Student</p>
+            <p>Architected materials, additive manufacturing, and mechanics experiments.</p>
+          </div>
+        </article>
+        <article class="member-card compact">
+          <div class="avatar">H</div>
+          <div>
+            <h3>Himal</h3>
+            <p class="role-line">Ph.D. Student</p>
+            <p>Computational mechanics, data-driven modeling, and machine learning for materials.</p>
+          </div>
+        </article>
+      </div>
     </div>
-    <p><a href="research.html">Full research overview →</a></p>
-  </main>
+  </section>
 
-  <aside class="sidebar">
-    <div class="headshot">
-      <!-- Replace this placeholder with: <img src="img/headshot.jpg" alt="Portrait of Yupeng Zhang"> -->
-      Headshot
+  <section class="section wrap">
+    <div class="home-columns">
+      <div>
+        <p class="eyebrow">News</p>
+        <h2>Recent updates</h2>
+        <div class="news-list">
+          <article><time datetime="2026-09">September 2026</time><h3>Lab811 website launches</h3><p>We are building the group at SIU and establishing new research directions in computational and experimental mechanics.</p></article>
+          <article><time datetime="2026-08">August 2026</time><h3>Lab811 begins at SIU</h3><p>Prof. Yupeng Zhang joins Southern Illinois University Carbondale as a tenure-track Assistant Professor.</p></article>
+          <article><time datetime="2026-08">August 2026</time><h3>New Ph.D. students join the group</h3><p>Prateek Neupane and Himal join Lab811 as Ph.D. students.</p></article>
+        </div>
+        <p><a href="news.html">More news →</a></p>
+      </div>
+      <aside class="contact-panel">
+        <p class="eyebrow">Contact</p>
+        <h2>Find us</h2>
+        <p><strong>Lab811</strong><br>
+        School of Mechanical, Aerospace, and Materials Engineering<br>
+        Southern Illinois University Carbondale</p>
+        <p>Office: Engineering Building E0020<br>
+        Research lab: Engineering Building E0040</p>
+        <p><a href="openings.html">Interested in joining Lab811? →</a></p>
+      </aside>
     </div>
+  </section>
+</main>
 
-    <h2>Contact</h2>
-    <ul class="contact-list">
-      <li><span class="label">Email</span> <a href="mailto:yzhang@alumni.caltech.edu">yzhang@alumni.caltech.edu</a><!-- TODO: confirm address --></li>
-      <li><span class="label">Office</span> Engineering IV, UCLA <!-- TODO: room number --></li>
-      <li><a href="https://scholar.google.com/">Google Scholar</a> <!-- TODO: your profile URL --></li>
-      <li><a href="https://www.researchgate.net/profile/Yupeng-Zhang-4">ResearchGate</a></li>
-      <li><a href="https://github.com/yupengmechanics">GitHub</a></li>
-      <li><a href="https://www.linkedin.com/">LinkedIn</a> <!-- TODO: your profile URL --></li>
-    </ul>
-
-    <h2>News</h2>
-    <ul class="news">
-      <li>
-        <time datetime="2026-09">Fall 2026</time>
-        Joining [University] as a tenure-track Assistant Professor.
-      </li>
-      <li>
-        <time datetime="2026-03">Spring 2026</time>
-        Instructor of record for MAE 101, Statics and Strength of Materials, at UCLA.
-      </li>
-      <li>
-        <time datetime="2024">2024</time>
-        Awarded an NSF NAIRR grant (NAIRR240262) as single PI.
-      </li>
-      <li>
-        <time datetime="2024">2024</time>
-        Paper on iterated learning of history-dependent metamaterials published
-        in <em>Mechanics of Materials</em> with Kaushik Bhattacharya.
-      </li>
-    </ul>
-  </aside>
-</div>
 
 <footer class="site-footer">
-  <div class="wrap">
-    <span>© 2026 Yupeng Zhang</span>
-    <span>Built with plain HTML &amp; CSS · Hosted on <a href="https://pages.github.com/">GitHub Pages</a></span>
+  <div class="wrap footer-grid">
+    <div>
+      <strong>Lab811</strong><br>
+      Mechanics · Materials · Machine Learning
+    </div>
+    <div>
+      School of Mechanical, Aerospace, and Materials Engineering<br>
+      Southern Illinois University Carbondale
+    </div>
+    <div class="footer-right">
+      © 2026 Lab811<br>
+      Hosted on GitHub Pages
+    </div>
   </div>
 </footer>
 
