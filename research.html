@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Research — Yupeng Zhang</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,600;1,400&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav wrap" aria-label="Main">
+    <a class="brand" href="index.html">Yupeng Zhang</a>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="research.html" aria-current="page">Research</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="teaching.html">Teaching</a></li>
+      <li><a href="awards-service.html">Awards &amp; Service</a></li>
+      <li><a href="resources.html">Resources</a></li>
+      <!-- Group-site pages: uncomment when the group launches in Fall 2026.
+      <li><a href="people.html">People</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="openings.html">Openings</a></li>
+      -->
+      <li><a href="cv.pdf">CV</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="wrap">
+  <div class="page-title">
+    <h1>Research</h1>
+    <p class="lede">Predictive mechanics of materials and structures, accelerated
+    and enriched by machine learning — spanning theory, computation, and experiment.</p>
+  </div>
+
+  <main class="single">
+
+    <p>
+      A grand challenge in computational science and engineering is that
+      machine-learned models depend on the discretization of their training
+      data. My research develops deep-learned <em>operators</em> — mappings
+      between infinite-dimensional function spaces rather than between
+      finite-dimensional vectors — that remain accurate across data resolutions.
+      Used as efficient surrogates, these operators serve three goals: to
+      discover constitutive models and closures, to develop applicable
+      multiscale models, and to resolve inverse problems. Resolution invariance
+      matters most where it is least controllable: in experiments, where the
+      learned operator must accept whatever resolution the measurement provides
+      while maintaining a consistent error level. This program aligns with
+      NSF's Harnessing the Data Revolution big idea and is supported by an
+      NSF NAIRR award (NAIRR240262, single PI).
+    </p>
+
+    <h2 id="ml-mechanics">Machine learning for mechanics<span class="rule"></span></h2>
+    <p>
+      Classical constitutive models struggle with path dependence,
+      microstructural complexity, and the cost of multiscale simulation. I
+      develop machine-learning surrogates that respect mechanics:
+      operator-learning models that map loading histories to material response,
+      recurrent architectures (LSTM/RNN) for history-dependent behavior such as
+      viscoplasticity and creep, iterated learning for multiscale modeling of
+      architectured metamaterials [8], and variational autoencoders for
+      generative design. A signature capability of my work is deploying these
+      models <em>inside</em> production finite-element solvers — neural
+      constitutive models called directly from Abaqus VUMAT subroutines via
+      PyTorch — so that learned physics runs in real engineering workflows, not
+      only in notebooks.
+    </p>
+    <p class="thrust tags">Operator learning · LSTM/RNN · VAE generative design ·
+    iterated/multiscale learning · PyTorch · JAX · Abaqus VUMAT</p>
+
+    <h2 id="fracture-creep">Fracture, damage, and creep of structural materials<span class="rule"></span></h2>
+    <p>
+      How do materials fail — suddenly by fracture, or slowly by creep and
+      distributed damage? Building on training with Alan Needleman and Zdeněk
+      Bažant, I study viscoplasticity and power-law creep [4], quasibrittle
+      damage and probabilistic failure scaling [7], and continuum modeling of
+      localized cracking, including the smooth crack band model [5] — a
+      computational approach based on unorthodox continuum homogenization. The
+      goal is lifetime prediction that engineers can trust: models calibrated
+      against experiment, validated at scale, and honest about their
+      uncertainty.
+    </p>
+    <p class="thrust tags">Viscoplasticity · creep · fracture mechanics ·
+    crack band modeling · quasibrittle failure · size effect</p>
+
+    <h2 id="inverse-uq">Inverse problems and uncertainty quantification<span class="rule"></span></h2>
+    <p>
+      Measurements are indirect; properties must be inferred. Beginning with my
+      doctoral work with Alan Needleman and statistician Jeffrey D. Hart, I use
+      Bayesian inference, Gaussian-process surrogates, and uncertainty
+      quantification to extract constitutive parameters from conical and
+      spherical indentation [1–4, 6] — including plastically compressible
+      solids [3] — and full-field DIC measurements, turning raw data into
+      material models with quantified confidence.
+    </p>
+    <p class="thrust tags">Bayesian inference · Gaussian processes · UQ ·
+    indentation · digital image correlation</p>
+
+    <h2 id="structures">Plates, shells, and structural instability<span class="rule"></span></h2>
+    <p>
+      Thin-walled structures fail by buckling and instability long before
+      material limits are reached. I work on nonlinear plate and shell
+      mechanics, large deformation, and stability analysis, with applications
+      from engineered structures to multiphysics systems involving
+      thermal–electromagneto–mechanical coupling.
+    </p>
+    <p class="thrust tags">Plate &amp; shell theory · buckling · nonlinear
+    statics/dynamics · multiphysics coupling · Abaqus · Ansys · Comsol</p>
+
+    <h2 id="experiment">Experiment and additive manufacturing<span class="rule"></span></h2>
+    <p>
+      Models earn their keep against data. My experimental work includes nano-
+      and micro-indentation, MTS mechanical testing, digital image correlation,
+      CNC machining, and additive manufacturing — closing the loop between
+      simulation, learning, and the physical laboratory.
+    </p>
+    <p class="thrust tags">Nano/micro-indentation · MTS · DIC · CNC ·
+    additive manufacturing</p>
+
+    <p class="note">Bracketed numbers refer to the
+    <a href="publications.html">publication list</a>.</p>
+
+  </main>
+</div>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© 2026 Yupeng Zhang</span>
+    <span>Built with plain HTML &amp; CSS · Hosted on <a href="https://pages.github.com/">GitHub Pages</a></span>
+  </div>
+</footer>
+
+</body>
+</html>
