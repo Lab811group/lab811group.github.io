@@ -41,12 +41,3 @@ draft. Replace this with Prof. Zhang's preferred SIU email before final producti
 
 Copy these files into the local `lab811group.github.io` repository, commit, and push to `main`.
 GitHub Pages should redeploy automatically.
-
-## September 10 consistency update
-
-- Removed the visible “Skip to main content” link.
-- Removed the separate “Southern Illinois University” top bar.
-- Removed the hidden/visible “Main navigation” heading.
-- Standardized content widths across pages.
-- Changed the homepage to use the same page-title design language as the internal pages.
-- Kept the SIU affiliation and required institutional information in the site content/footer.
