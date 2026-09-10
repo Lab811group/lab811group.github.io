@@ -1,36 +1,43 @@
-# Lab811 website
+# Lab811 — SIU web-review candidate
 
-Official repository for the Lab811 research group website.
+Website: https://lab811group.github.io/
 
-**Website:** https://lab811group.github.io
+This version is prepared for review by SIU Web Communications.
 
-Lab811 is a mechanics, materials, and machine-learning research group at
-Southern Illinois University Carbondale.
+## Changes made for review
 
-## Site structure
+- Removed the decorative Lab811 circular mark so the site does not present a secondary logo.
+- Removed the homepage graphic and all placeholder member graphics.
+- Added a prominent link to Southern Illinois University above the group navigation on every page.
+- Added a skip-to-content link and main-content landmark on every page.
+- Removed JavaScript and third-party Google Fonts.
+- Added visible keyboard focus styles and responsive text-only navigation.
+- Added required footer elements:
+  - site-maintainer email link
+  - SIU Equal Opportunity Employer link
+  - SIU Web Privacy Policy link
+  - current-year SIU Board of Trustees copyright
+  - last-updated date
+- Added an Accessibility link.
+- Kept the site static: no forms, database, analytics, cookies, login, or collection of sensitive information.
 
-- `index.html` — group homepage
-- `research.html` — research themes
-- `members.html` — PI, current members, alumni/past members
-- `publications.html` — selected publications
-- `teaching.html` — teaching and mentoring
-- `news.html` — group news
-- `openings.html` — prospective students and collaboration
-- `resources.html` — curated resources
-- `css/style.css` — site styling
+## One item to confirm with SIU Web Communications
 
-## Updating the site
+SIU Web Standards specify that official University web pages should use the official SIU web logo,
+linked to https://siu.edu/, above the fold. The current review candidate uses a plain-text
+"Southern Illinois University" institutional link instead of inventing or altering a University logo.
 
-1. Edit locally.
-2. Commit in GitHub Desktop.
-3. Push to `main`.
-4. GitHub Pages will redeploy automatically.
+After Web Communications confirms which official web-logo asset they want used, save the approved
+asset in `img/` and replace the institutional text link with that approved logo.
 
-## Before broader public launch
+Do not create a custom SIU-styled logo for Lab811; SIU's published standards prohibit secondary logos.
 
-- Replace the generic Google Scholar link with Prof. Zhang's exact profile URL.
-- Add a preferred SIU email address if desired.
-- Add member surnames, photos, personal pages, and detailed research topics as appropriate.
-- Add future alumni and placement information.
-- Add a custom SIU domain if approved.
-- Review SIU branding/accessibility/footer requirements before treating the site as an official university web property.
+## Maintainer email
+
+The footer currently uses `yupeng@siu.edu`, the contact address available in the prior site
+draft. Replace this with Prof. Zhang's preferred SIU email before final production if desired.
+
+## Deployment
+
+Copy these files into the local `lab811group.github.io` repository, commit, and push to `main`.
+GitHub Pages should redeploy automatically.

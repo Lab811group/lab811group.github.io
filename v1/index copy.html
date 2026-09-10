@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#720000">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,600;1,400&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+  .hero-grid.hero-grid-text-only {
+    grid-template-columns: minmax(0, 850px);
+    min-height: 470px;
+  }
+
+  @media (max-width: 980px) {
+    .hero-grid.hero-grid-text-only {
+      grid-template-columns: 1fr;
+      min-height: auto;
+    }
+  }
+</style>
+
+
+<title>Lab811 — Mechanics, Materials &amp; Machine Learning</title>
+<meta name="description" content="Lab811 at Southern Illinois University Carbondale develops predictive mechanics through solid mechanics, computation, machine learning, and experiment.">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav wrap" aria-label="Main navigation">
+    <a class="brand" href="index.html"><span class="brand-mark">811</span><span>Lab811</span></a>
+    <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.body.classList.toggle('nav-open')">Menu</button>
+    <ul>
+      <li><a href="index.html" aria-current="page">Home</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="members.html">Members</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="teaching.html">Teaching</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="openings.html">Openings</a></li>
+      <li><a href="resources.html">Resources</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+<section class="hero">
+  <div class="wrap hero-grid hero-grid-text-only">
+    <div>
+      <p class="eyebrow">Southern Illinois University Carbondale</p>
+      <h1>Lab811</h1>
+      <p class="hero-tagline">Mechanics · Materials · Machine Learning</p>
+      <p class="hero-copy">
+        We develop predictive models for materials and structures by combining
+        solid mechanics, computation, data-driven modeling, and experiment.
+        Our work spans constitutive modeling, fracture and creep, inverse problems,
+        architected materials, and machine learning for mechanics.
+      </p>
+      <div class="hero-actions">
+        <a class="button" href="research.html">Explore our research</a>
+        <a class="button secondary" href="members.html">Meet the group</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<main>
+  <section class="section wrap">
+    <div class="section-heading">
+      <p class="eyebrow">Research</p>
+      <h2>What we work on</h2>
+    </div>
+    <div class="card-grid three">
+      <article class="card">
+        <span class="card-kicker">01</span>
+        <h3>Machine learning for mechanics</h3>
+        <p>Operator learning, recurrent models for history-dependent behavior,
+        generative design, and learned constitutive models deployed in finite-element workflows.</p>
+        <a href="research.html#ml-mechanics">Learn more →</a>
+      </article>
+      <article class="card">
+        <span class="card-kicker">02</span>
+        <h3>Failure &amp; lifetime prediction</h3>
+        <p>Fracture, damage, creep, viscoplasticity, localization, and probabilistic
+        failure of structural and architected materials.</p>
+        <a href="research.html#failure">Learn more →</a>
+      </article>
+      <article class="card">
+        <span class="card-kicker">03</span>
+        <h3>Experiments, inverse problems &amp; design</h3>
+        <p>Indentation, full-field measurements, additive manufacturing, Bayesian
+        inference, uncertainty quantification, and experiment-informed model discovery.</p>
+        <a href="research.html#inverse">Learn more →</a>
+      </article>
+    </div>
+  </section>
+
+  <section class="section section-tint">
+    <div class="wrap">
+      <div class="section-heading split-heading">
+        <div>
+          <p class="eyebrow">People</p>
+          <h2>Current group</h2>
+        </div>
+        <a href="members.html">All members →</a>
+      </div>
+      <div class="member-grid">
+        <article class="member-card compact">
+          <div class="avatar">YZ</div>
+          <div>
+            <h3>Yupeng Zhang</h3>
+            <p class="role-line">Principal Investigator · Assistant Professor</p>
+            <p>Solid mechanics, computational modeling, machine learning for materials and structures.</p>
+          </div>
+        </article>
+        <article class="member-card compact">
+          <div class="avatar">PN</div>
+          <div>
+            <h3>Prateek Neupane</h3>
+            <p class="role-line">Ph.D. Student</p>
+            <p>Architected materials, additive manufacturing, and mechanics experiments.</p>
+          </div>
+        </article>
+        <article class="member-card compact">
+          <div class="avatar">H</div>
+          <div>
+            <h3>Himal</h3>
+            <p class="role-line">Ph.D. Student</p>
+            <p>Computational mechanics, data-driven modeling, and machine learning for materials.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section wrap">
+    <div class="home-columns">
+      <div>
+        <p class="eyebrow">News</p>
+        <h2>Recent updates</h2>
+        <div class="news-list">
+          <article><time datetime="2026-09">September 2026</time><h3>Lab811 website launches</h3><p>We are building the group at SIU and establishing new research directions in computational and experimental mechanics.</p></article>
+          <article><time datetime="2026-08">August 2026</time><h3>Lab811 begins at SIU</h3><p>Prof. Yupeng Zhang joins Southern Illinois University Carbondale as a tenure-track Assistant Professor.</p></article>
+          <article><time datetime="2026-08">August 2026</time><h3>New Ph.D. students join the group</h3><p>Prateek Neupane and Himal join Lab811 as Ph.D. students.</p></article>
+        </div>
+        <p><a href="news.html">More news →</a></p>
+      </div>
+      <aside class="contact-panel">
+        <p class="eyebrow">Contact</p>
+        <h2>Find us</h2>
+        <p><strong>Lab811</strong><br>
+        School of Mechanical, Aerospace, and Materials Engineering<br>
+        Southern Illinois University Carbondale</p>
+        <p>Office: Engineering Building E0020<br>
+        Research lab: Engineering Building E0040</p>
+        <p><a href="openings.html">Interested in joining Lab811? →</a></p>
+      </aside>
+    </div>
+  </section>
+</main>
+
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <strong>Lab811</strong><br>
+      Mechanics · Materials · Machine Learning
+    </div>
+    <div>
+      School of Mechanical, Aerospace, and Materials Engineering<br>
+      Southern Illinois University Carbondale
+    </div>
+    <div class="footer-right">
+      © 2026 Lab811<br>
+      Hosted on GitHub Pages
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
